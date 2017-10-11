@@ -1,0 +1,10 @@
+type Query {
+    article(sku: String): Article
+}
+
+type Article {
+    sku: String
+    name: String
+    accessories: [Article]!
+    related: [Article]!
+}
